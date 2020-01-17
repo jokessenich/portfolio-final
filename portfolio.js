@@ -4,7 +4,6 @@ function handleNav(){
   $(".nav-links").click(e=> {
     e.preventDefault();
   $('html,body').animate({scrollTop: $(e.currentTarget['hash']).offset().top},800);
-  console.log('slow click')
   });
 } 
 
@@ -46,12 +45,6 @@ function handlePage(){
   handleButtons();
   
   handleNav();
-
-
-
-
-console.log('end')
-
 }
 
 $(handlePage());
